@@ -6,8 +6,7 @@ using System.Linq;
 
 public class EventManager
 { 
-    private static List<Listener> _eventList = new List<Listener>();
-  
+    private static List<Listener> _eventList = new List<Listener>();  
 
     public static void Trigger<T>(T paramToSend) where T : struct
     {
